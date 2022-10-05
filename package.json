@@ -8,25 +8,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jens-ox/eslint-plugin-material-ui-unused-classes.git"
+    "url": "git+https://github.com/LucaFrancis/eslint-plugin-material-ui-unused-classes.git"
   },
   "keywords": [
     "eslint",
     "material-ui"
   ],
-  "author": "Jens Ochsenmeier",
+  "author": "Luca Francis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jens-ox/eslint-plugin-material-ui-unused-classes/issues"
+    "url": "https://github.com/LucaFrancis/eslint-plugin-material-ui-unused-classes/issues"
   },
-  "homepage": "https://github.com/jens-ox/eslint-plugin-material-ui-unused-classes#readme",
+  "homepage": "https://github.com/LucaFrancis/eslint-plugin-material-ui-unused-classes#readme",
   "peerDependencies": {
-    "eslint": "^7.14.0"
+    "eslint": "^8.24.0"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^4.9.0",
+    "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^7.14.0",
-    "mocha": "^8.2.1",
+    "mocha": "^10.0.0",
     "typescript": "^4.1.2"
   }
 }

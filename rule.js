@@ -33,7 +33,7 @@ module.exports = {
 
     return {
       CallExpression(node) {
-        if (node.callee.name === 'makeStyles') {
+        if (["createStyles", "makeStyles"].includes(node.callee.name)) {
           const styles = node.arguments[0];
 
           if (styles && styles.type === 'ArrowFunctionExpression') {
@@ -127,7 +127,7 @@ module.exports = {
         }
       },
       'Program:exit': () => {
-        // Now we know all of the defined classes and used classes, so we can
+        // Now we know all the defined classes and used classes, so we can
         // see if there are any defined classes that are not used.
         Object.keys(definedClasses).forEach((definedClassKey) => {
           if (!usedClasses[definedClassKey]) {
